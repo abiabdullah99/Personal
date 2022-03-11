@@ -71,9 +71,20 @@ header {
   color: #222222;
   text-transform: uppercase;
 }
-.head-title {
+.text-animation {
   font-size: 50px;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+  color: transparent;
+}
+.text-animation:before {
+  content: "Abi Abdullah";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f49560;
+  animation: typing 3s linear infinite;
 }
 .text-title {
   color: rgb(107, 105, 105);
@@ -398,6 +409,88 @@ footer .foot {
 }
 .foot i:hover {
   color: hotpink;
+}
+
+/* Animation  */
+
+@keyframes typing {
+  0% {
+    content: "A|";
+  }
+  5% {
+    content: "Ab|";
+  }
+  10% {
+    content: "Abi|";
+  }
+  15% {
+    content: "Abi |";
+  }
+  20% {
+    content: "Abi A|";
+  }
+  25% {
+    content: "Abi Ab|";
+  }
+  30% {
+    content: "Abi Abd|";
+  }
+  35% {
+    content: "Abi Abdu";
+  }
+  40% {
+    content: "Abi Abdu|";
+  }
+  45% {
+    content: "Abi Abdull|";
+  }
+  50% {
+    content: "Abi Abdulla|";
+  }
+  55% {
+    content: "Abi Abdullah|";
+  }
+  60%,
+  80% {
+    content: "Abi Abdullah|";
+  }
+  83% {
+    content: "Abi Abdulla|";
+  }
+  85% {
+    content: "Abi Abdull|";
+  }
+  87% {
+    content: "Abi Abdul|";
+  }
+  90% {
+    content: "Abi Abdu";
+  }
+  92% {
+    content: "Abi Abd";
+  }
+  93% {
+    content: "Abi Ab";
+  }
+  94% {
+    content: "Abi A";
+  }
+  95% {
+    content: "Abi ";
+  }
+  96% {
+    content: "Abi";
+  }
+  97% {
+    content: "Ab";
+  }
+  98% {
+    content: "A";
+  }
+  99%,
+  100% {
+    content: "|";
+  }
 }
 /*-----------------
     Moblie Device 
