@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
   font-family: "Noto Sans Mono", monospace;
 }
+/*---------------------
+   Header Area Style 
+----------------------- */
+
 header {
   width: 100%;
   height: 70px;
@@ -11,284 +15,196 @@ header {
   top: 0;
   background-color: #fff;
   z-index: 1;
-}
-header div {
-  float: left;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-header .logo {
+.logo h1{
   margin-left: 150px;
   padding: 18px;
+  font-size: 27px;
+  color: #F49560;
 }
 .navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 190px;
+  display: flex;
+  margin-right: 50px;
 }
-.navbar ul {
+.navbar li {
+  padding: 10px 14px;
   list-style: none;
 }
-.navbar ul li {
-  float: left;
-  padding: 10px 14px;
-}
-.navbar ul li a {
+.navbar li a {
   text-decoration: none;
   color: #313030;
   font-family: "Noto Sans Mono", monospace;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
+  transition: 0.4s linear;
 }
-
-.navbar ul li a:hover {
-  color: #8490ff;
+.navbar li a:hover {
+  color: #F49560;
 }
-/* section area------  */
-
-.section1 {
-  background-color: #f9f9ff;
+/*----------------------------
+    Top Banner Area Style 
+------------------------------ */
+.top-banner {
   width: 100%;
-  height: 850px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
-}
-
-.half1,
-.half2 {
-  width: 50%;
+  margin-bottom: 150px;
+  margin-top: 100px;
 }
 .half1 {
-  margin-left: 170px;
-  margin-bottom: 50px;
+  flex: 1;
+  margin-left: 200px;
 }
 .half2 {
-  padding-right: 100px;
+  flex: 1;
 }
 .half2 img {
-  max-width: 100%;
+  max-width: 73%;
   height: auto;
 }
-.half1 h3 {
+.samll-text {
   font-weight: 200;
   color: #222222;
   text-transform: uppercase;
 }
-.half1 h1 {
+.head-title {
   font-size: 50px;
   font-weight: bold;
 }
-.half1 h6 {
+.text-title {
   color: rgb(107, 105, 105);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   width: 90%;
 }
 span {
-  color: #64bbfc;
+  color: #F49560;
 }
-.half1 input {
+.blue-btn {
   padding: 10px 35px;
   outline: none;
-  background: linear-gradient(45deg, #8195ff, #64bbfc);
+  background: linear-gradient(45deg, #F49560, #FAC961);
   font-size: 14px;
   color: #fff;
   border: none;
   border-radius: 2px;
   letter-spacing: 1px;
 }
-.half1 input:hover {
-  box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+.blue-btn:hover {
+  box-shadow: 5px 10px 30px rgba(255, 243, 130, 0.5);
   transition: all 0.5s ease-in 0.1s;
   outline: none;
 }
-/* section end ----  */
+/*----------------------
+    About area Style 
+-----------------------*/
 
-/* Section 2 start---- */
-
-.section2 {
+.About-area {
   width: 100%;
-  height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.section2 img {
-  width: 100%;
+.half-1 img {
+  width: 80%;
   height: auto;
+  margin-left: 200px;
 }
-.half-1,
-.half-2 {
-  width: 50%;
+.half-2{
+    margin-left: 200px;
 }
-.half-1 {
-  margin-left: 170px;
-}
-.half-2 {
-  margin-left: 100px;
-  margin-bottom: 50px;
-}
-.half-2 h3 {
-  font-weight: 200;
-  color: #222222;
-  text-transform: uppercase;
-  font-size: 17px;
-}
-.half-2 h1 {
-  font-size: 37px;
-  font-weight: bold;
-}
-.half-2 h6 {
-  color: rgb(107, 105, 105);
-  font-size: 13px;
-  width: 70%;
-  font-weight: 400;
-}
-.half-2 input {
-  padding: 10px 35px;
-  outline: none;
-  background: linear-gradient(45deg, #8195ff, #64bbfc);
-  font-size: 14px;
-  color: #fff;
-  border: none;
-  border-radius: 2px;
-  letter-spacing: 1px;
-}
-.half-2 input:hover {
-  box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
-  transition: all 0.5s ease-in 0.1s;
-  outline: none;
-}
-/* section two end----  */
-
-/* section three strat--- */
-
-.section-3 {
+/*-------------------------
+    Service Area Style
+--------------------------- */
+.service-section {
   width: 100%;
-  height: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 100px;
 }
-.section-3 h1 {
-  color: #222222;
-  font-size: 35px;
-  font-weight: 700;
-}
-.section-3 p {
+.service-section p {
   width: 45%;
   margin: auto;
   font-size: 13px;
   color: rgb(107, 105, 105);
 }
-.service {
+.service-area {
   width: 80%;
   margin: 0 auto;
-  padding-top: 54px;
 }
-.seri,
-.seri-2 {
-  width: 100%;
-  overflow: hidden;
-}
-.seri div,
-.seri-2 div {
-  float: left;
-  width: 32%;
-  padding: 5px;
-  margin: 0 auto;
-}
-.seri-2 {
-  margin-top: 30px;
-}
-.service i {
+.service-area i {
   font-size: 35px;
   color: grey;
 }
-.service h1 {
+.service-area h1 {
   font-size: 25px;
   color: #414141;
 }
-.service p {
+.service-area p {
   font-size: 13px;
   width: 80%;
 }
-.seri div:hover {
-  background-color: #8195ff;
-  border-radius: 5px;
+.service-1 {
+  display: flex;
+  margin-top: 100px;
 }
-.seri-2 div:hover {
-  background-color: #8195ff;
-  border-radius: 5px;
+.service-2 {
+  display: flex;
+  margin-top: 50px;
 }
-.seri-2 div:hover i {
-  color: #fff;
-}
-.seri-2 div:hover h1 {
-  color: #fff;
-}
-.seri-2 div:hover p {
-  color: #fff;
-}
-.seri div:hover i {
-  color: #fff;
-}
-.seri div:hover h1 {
-  color: #fff;
-}
-.seri div:hover p {
-  color: #fff;
-}
-.section-4 {
+
+/*---------------------------
+     Clients Section style
+----------------------------- */
+.Clients-section {
   width: 100%;
-  height: 300px;
-  background: linear-gradient(35deg, #8195ff, #64bbfc);
+  height: 230px;
+  background: linear-gradient(35deg, #F49560, #FAC961);
   margin-top: 80px;
   margin-bottom: 100px;
+  display: flex;
 }
-.section-4 div {
-  float: left;
-  width: 20%;
-  margin: 0 auto;
-  position: relative;
-  left: 200px;
-  top: 80px;
+.Clients-section div {
+  margin: auto;
 }
-.section-4 h1,
+.Clients-section h1,
 p {
   text-align: center;
   color: #fff;
 }
-.section-4 h1 {
+.Clients-section h1 {
   font-size: 40px;
   font-weight: bold;
 }
-.section-4 p {
+.Clients-section p {
   font-size: 14px;
   margin-top: -40px;
 }
-.section-5 {
+/*-----------------------
+    Gallery Area Style 
+------------------------- */
+.gallery {
   width: 100%;
 }
-.text-2 {
+.gallery-text {
   text-align: center;
 }
-.text-2 h6 {
+.gallery-text h6 {
   color: gray;
   font-weight: 400;
   font-size: 14px;
   margin-top: -20px;
 }
-.text-2 h1 {
+.gallery-text h1 {
   font-size: 40px;
   font-weight: bold;
   color: #383838;
 }
-
-.img {
+.gallery-content{
   width: 75%;
   height: auto;
   display: flex;
@@ -297,15 +213,14 @@ p {
   margin: 0 auto;
   margin-top: 100px;
 }
-
-.img div {
+.gallery-content div {
   width: 340px;
   height: 339px;
   padding-bottom: 140px;
   text-align: center;
 }
-.section5 figure {
-  background: linear-gradient(55deg, #42adff, #8195ff);
+.gallery figure {
+  background: linear-gradient(55deg, #F49560, #FAC961);
   width: 340px;
   height: 339px;
   overflow: hidden;
@@ -313,22 +228,25 @@ p {
   padding: 0;
   border-radius: 2px;
 }
-.section5 figure img:hover {
-  opacity: 0.3;
+.gallery figure img:hover {
+  opacity: 0.5;
   transition: all 0.3s;
 }
-.img h1 {
+.gallery-content h1 {
   font-size: 20px;
   text-align: center;
   color: #3a3737;
 }
-.img h5 {
+.gallery-content h5 {
   font-size: 15px;
   text-align: center;
   color: #777373;
   margin-top: -18px;
 }
-.section-6 {
+/*-------------------------
+     Pricing Table Style 
+-------------------------- */
+.Pricing {
   width: 100%;
   height: 700px;
 }
@@ -356,12 +274,13 @@ p {
 }
 .card-1 {
   width: 320px;
-  height: 530px;
+  height: 520px;
   background-color: rgb(249, 249, 255);
   text-align: center;
   border: 1 px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 .card-1 h1 {
   font-size: 50px;
@@ -369,7 +288,7 @@ p {
 }
 .card-1 input {
   outline: none;
-  background: linear-gradient(35deg, #8195ff, #64bbfc);
+  background: linear-gradient(35deg, #F49560, #FAC961);
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
@@ -386,23 +305,22 @@ hr {
   font-weight: 300;
 }
 .card-1:hover {
-  background-color: #8282ff;
+  background-color: #F49560;
   color: #fff;
   transition: all 0.25s case-in;
   transform: scale(1.05);
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(130, 147, 255, 0.5);
+  border: 1px solid rgba(255, 232, 130, 0.5);
   border-radius: 5px;
 }
 .card-1:hover input {
   color: #fff;
   background-color: #fff;
 }
+/* footer area  */
 footer {
   background: #04091e;
   color: #fff;
-  height: 400px;
-  position: absolute;
   width: 100%;
   margin-top: 200px;
 }
@@ -412,7 +330,6 @@ footer .foot {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 120px;
 }
 .foot-1 h6 {
   color: rgba(255, 255, 255, 0.5);
@@ -440,7 +357,7 @@ footer .foot {
 .foot-2 button {
   font-size: 16px;
   padding: 12px 25px;
-  background: linear-gradient(55deg, #42adff, #8195ff);
+  background: linear-gradient(55deg, #F49560, #FAC961);
   border: none;
   border-radius: 20px;
   color: #fff;
@@ -461,4 +378,60 @@ footer .foot {
 }
 .foot i:hover {
   color: hotpink;
+}
+/*-----------------
+    Moblie Device 
+------------------- */
+@media only screen and (max-width: 688px) {
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+  .half2 img{
+      width: 90%;
+      margin-left: 30px;
+  }
+  .top-banner {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .half1 {
+    margin-left: 40px;
+  }
+  .About-area {
+    flex-direction: column;
+  }
+  .half-1 img{
+    margin-left: 20px;
+  }
+  .half-2 {
+    margin-left: 40px;
+  }
+  .service-area div {
+    margin-bottom: 40px;
+  }
+  .service-1 {
+    flex-direction: column;
+  }
+  .service-2 {
+    flex-direction: column;
+  }
+  .Clients-section{
+      flex-direction: column;
+  }
+  .card{
+      flex-direction: column;
+  }
+  .foot{
+      flex-direction: column;
+  }
+  .foot-1{
+      margin-left: 0px;
+  }
+  .foot-2{
+      padding-left: 0px;
+  }
+  .foot-3{
+      padding-left: 0px;
+  }
 }
