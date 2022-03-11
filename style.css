@@ -19,11 +19,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo h1{
+.logo h1 {
   margin-left: 150px;
   padding: 18px;
   font-size: 27px;
-  color: #F49560;
+  color: #f49560;
 }
 .navbar {
   display: flex;
@@ -42,7 +42,7 @@ header {
   transition: 0.4s linear;
 }
 .navbar li a:hover {
-  color: #F49560;
+  color: #f49560;
 }
 /*----------------------------
     Top Banner Area Style 
@@ -82,12 +82,12 @@ header {
   width: 90%;
 }
 span {
-  color: #F49560;
+  color: #f49560;
 }
 .blue-btn {
   padding: 10px 35px;
   outline: none;
-  background: linear-gradient(45deg, #F49560, #FAC961);
+  background: linear-gradient(45deg, #f49560, #fac961);
   font-size: 14px;
   color: #fff;
   border: none;
@@ -114,8 +114,8 @@ span {
   height: auto;
   margin-left: 200px;
 }
-.half-2{
-    margin-left: 200px;
+.half-2 {
+  margin-left: 200px;
 }
 /*-------------------------
     Service Area Style
@@ -163,7 +163,7 @@ span {
 .Clients-section {
   width: 100%;
   height: 230px;
-  background: linear-gradient(35deg, #F49560, #FAC961);
+  background: linear-gradient(35deg, #f49560, #fac961);
   margin-top: 80px;
   margin-bottom: 100px;
   display: flex;
@@ -204,7 +204,7 @@ p {
   font-weight: bold;
   color: #383838;
 }
-.gallery-content{
+.gallery-content {
   width: 75%;
   height: auto;
   display: flex;
@@ -220,7 +220,7 @@ p {
   text-align: center;
 }
 .gallery figure {
-  background: linear-gradient(55deg, #F49560, #FAC961);
+  background: linear-gradient(55deg, #f49560, #fac961);
   width: 340px;
   height: 339px;
   overflow: hidden;
@@ -288,7 +288,7 @@ p {
 }
 .card-1 input {
   outline: none;
-  background: linear-gradient(35deg, #F49560, #FAC961);
+  background: linear-gradient(35deg, #f49560, #fac961);
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
@@ -305,13 +305,33 @@ hr {
   font-weight: 300;
 }
 .card-1:hover {
-  background-color: #F49560;
+  background-color: #f49560;
   color: #fff;
   transition: all 0.25s case-in;
   transform: scale(1.05);
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 232, 130, 0.5);
   border-radius: 5px;
+}
+#active {
+  background-color: #f49560;
+  color: #fff;
+  transition: all 0.25s case-in;
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 232, 130, 0.5);
+  border-radius: 5px;
+}
+#active:hover {
+  width: 320px;
+  height: 520px;
+  background-color: rgb(249, 249, 255);
+  text-align: center;
+  border: 1 px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: #04091e;
 }
 .card-1:hover input {
   color: #fff;
@@ -357,7 +377,7 @@ footer .foot {
 .foot-2 button {
   font-size: 16px;
   padding: 12px 25px;
-  background: linear-gradient(55deg, #F49560, #FAC961);
+  background: linear-gradient(55deg, #f49560, #fac961);
   border: none;
   border-radius: 20px;
   color: #fff;
@@ -387,9 +407,9 @@ footer .foot {
     flex-direction: column;
     position: relative;
   }
-  .half2 img{
-      width: 90%;
-      margin-left: 30px;
+  .half2 img {
+    width: 90%;
+    margin-left: 30px;
   }
   .top-banner {
     flex-direction: column;
@@ -401,7 +421,7 @@ footer .foot {
   .About-area {
     flex-direction: column;
   }
-  .half-1 img{
+  .half-1 img {
     margin-left: 20px;
   }
   .half-2 {
@@ -416,22 +436,22 @@ footer .foot {
   .service-2 {
     flex-direction: column;
   }
-  .Clients-section{
-      flex-direction: column;
+  .Clients-section {
+    flex-direction: column;
   }
-  .card{
-      flex-direction: column;
+  .card {
+    flex-direction: column;
   }
-  .foot{
-      flex-direction: column;
+  .foot {
+    flex-direction: column;
   }
-  .foot-1{
-      margin-left: 0px;
+  .foot-1 {
+    margin-left: 0px;
   }
-  .foot-2{
-      padding-left: 0px;
+  .foot-2 {
+    padding-left: 0px;
   }
-  .foot-3{
-      padding-left: 0px;
+  .foot-3 {
+    padding-left: 0px;
   }
 }
